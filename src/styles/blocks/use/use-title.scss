@@ -1,0 +1,31 @@
+@use "../../variables" as *;
+@use "../../functions" as *;
+
+.use-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.use-title__above {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.use-title__above-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.use-title__line {
+  margin-top: #{px-to-rem(25)}rem;
+}

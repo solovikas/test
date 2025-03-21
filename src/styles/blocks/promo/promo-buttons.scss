@@ -1,0 +1,32 @@
+@use "../../variables" as *;
+@use "../../functions" as *;
+
+.promo-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: #{px-to-rem(44)}rem;
+  pointer-events: auto;
+}
+
+.promo-buttons__portfolio-button,
+.promo-buttons__about-button {
+  background-color: $yellow;
+  color: $black;
+  border-style: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: #{px-to-rem(14)}rem;
+  width: #{px-to-rem(135)}rem;
+  height: calc(#{px-to-rem(135)}rem / 3);
+  box-shadow: 0 4px 4px 0 rgba($black, 0.15);
+  outline: none;
+}
+
+.promo-buttons__about-button {
+  background-color: transparent;
+  width: fit-content;
+  height: auto;
+  box-shadow: none;
+}

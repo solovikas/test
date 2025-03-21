@@ -1,0 +1,26 @@
+@use "../../variables" as *;
+@use "../../functions" as *;
+@use "./promo-text.scss" as *;
+
+.promo-info {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: #{px-to-rem(25)}rem;
+  width: px-to-percent(px-to-rem(1140));
+  height: 100%;
+  padding-top: px-to-percent(px-to-rem(200));
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: #{px-to-rem(640)}rem) {
+  .promo-info {
+    gap: #{px-to-rem(32)}rem;
+    width: 100%;
+    padding-top: #{px-to-rem(206)}rem;
+    margin-left: #{px-to-rem(20)}rem;
+  }
+}

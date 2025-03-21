@@ -1,0 +1,28 @@
+@use "../../variables" as *;
+@use "../../functions" as *;
+
+.contact-title {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.contact-title__above {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact-title__text {
+  position: absolute;
+  top: 50%;
+  left: #{px-to-rem(12)}rem;
+  transform: translateY(-50%);
+}

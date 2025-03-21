@@ -1,0 +1,13 @@
+@use "../../variables" as *;
+@use "../../functions" as *;
+@use "./use-info.scss" as *;
+@use "./use-title.scss" as *;
+@use "./use-info-education.scss" as *;
+@use "./use-info-experience.scss" as *;
+
+.use {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+}

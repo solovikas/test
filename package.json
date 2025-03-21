@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "css-loader": "^7.1.2",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
+    "sass": "^1.86.0",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0"
+  },
+  "scripts": {
+    "build:sass": "sass src/styles/page.scss src/styles/page.css",
+    "build:postcss": "postcss src/styles/page.css -o dist/page.css",
+    "build": "npm run build:sass && npm run build:postcss"
+  }
+}

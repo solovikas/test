@@ -1,0 +1,12 @@
+@use "../../variables" as *;
+@use "../../functions" as *;
+@use "./contact-info.scss" as *;
+@use "./contact-title.scss" as *;
+@use "./agreement.scss" as *;
+
+.contact {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+}

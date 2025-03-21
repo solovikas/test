@@ -1,0 +1,69 @@
+@use "../../variables" as *;
+@use "../../functions" as *;
+
+.main {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  gap: #{px-to-rem(120)}rem;
+}
+
+.main__frame {
+  position: absolute;
+  z-index: 100;
+  width: px-to-percent(px-to-rem(1140));
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid $black;
+}
+
+.main__frame.hidden {
+  display: none;
+}
+
+@media (max-width:#{px-to-rem(320)}rem) {
+  .main {
+    gap: #{px-to-rem(40)}rem;
+  }
+}
+
+@media (min-width:#{px-to-rem(320)}rem) {
+  .main {
+    gap: #{px-to-rem(40)}rem;
+  }
+}
+
+@media (min-width: #{px-to-rem(640)}rem) {
+  .main {
+    gap: #{px-to-rem(60)}rem;
+  }
+}
+
+@media (max-width: #{px-to-rem(800)}rem) {
+  .main__frame {
+    display: none;
+  }
+}
+
+@media (min-width: #{px-to-rem(1024)}rem) {
+  .main {
+    gap: #{px-to-rem(80)}rem;
+  }
+}
+
+@media (min-width: #{px-to-rem(1440)}rem) {
+  .main {
+    gap: #{px-to-rem(120)}rem;
+  }
+}
+
+@media (min-width: #{px-to-rem(2560)}rem) {
+  .main {
+    gap: #{px-to-rem(140)}rem;
+  }
+}

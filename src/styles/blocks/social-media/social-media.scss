@@ -1,0 +1,31 @@
+@use "../../variables" as *;
+@use "../../functions" as *;
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: #{px-to-rem(20)}rem;
+  height: auto;
+  gap: #{px-to-rem(15)}rem;
+}
+
+.social-media__icon {
+  width: #{px-to-rem(20)}rem;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.social-media__line {
+  width: #{px-to-rem(70)}rem;
+  height: #{px-to-rem(2)}rem;
+  transform: rotate(-90deg);
+  margin-top: #{px-to-rem(35)}rem;
+  margin-bottom: #{px-to-rem(100)}rem;
+}
+
+.social-media__text {
+  transform: rotate(-90deg);
+  white-space: nowrap;
+}

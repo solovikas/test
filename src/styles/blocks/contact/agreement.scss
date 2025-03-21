@@ -1,0 +1,55 @@
+@use "../../variables" as *;
+@use "../../functions" as *;
+
+.agreement {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: #{px-to-rem(10)}rem;
+  align-self: center;
+  width: fit-content;
+}
+
+.agreement__checkbox {
+  width: 12rem;
+  height: 2rem;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.agreement_colored {
+  color: $purple;
+}
+
+.agreement__checkbox-input {
+  appearance: none;
+  border: 1px solid $black;
+  width: #{px-to-rem(12)}rem;
+  height: #{px-to-rem(12)}rem;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.agreement__checkbox-input:checked {
+  background-color: $black;
+}
+
+.agreement__checkbox-input:checked::after {
+  content: "✔";
+  position: absolute;
+  left: 50%;
+  top: 54%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  color: $white;
+}
+
+@media (min-width:#{px-to-rem(640)}rem) {
+  .agreement {
+    display: none;
+  }
+}

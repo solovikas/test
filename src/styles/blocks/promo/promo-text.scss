@@ -1,0 +1,29 @@
+@use "../../variables" as *;
+@use "../../functions" as *;
+
+.promo-text {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: #{px-to-rem(4)}rem;
+  white-space: nowrap;
+}
+
+.promo-text__above {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.promo-text__above-text {
+  position: absolute;
+  top: 50%;
+  left: #{px-to-rem(10)}rem;
+  transform: translateY(-50%);
+}
