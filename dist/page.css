@@ -1154,6 +1154,7 @@
   -moz-appearance: none;
   appearance: none;
   border: 1px solid black;
+  border-radius: none;
   width: 0.75rem;
   height: 0.75rem;
   cursor: pointer;
