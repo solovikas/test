@@ -210,7 +210,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  background-image: url("../src/assets/Background.jpg");
+  background-image: url("src/assets/Background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -262,7 +262,7 @@
 }
 @media (max-width: 40rem) {
   .promo {
-    background-image: url("../src/assets/Background%20(mobile).jpg");
+    background-image: url("src/assets/Background%20(mobile).jpg");
   }
   .promo__social-media {
     display: none;
@@ -512,7 +512,7 @@
   height: 15px;
   left: 0;
   top: 0;
-  background-image: url("../src/assets/Circle.svg");
+  background-image: url("src/assets/Circle.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -553,7 +553,7 @@
   height: 2.5rem;
   left: 0;
   top: 50%;
-  background-image: url("../src/assets/University.svg");
+  background-image: url("src/assets/University.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -567,7 +567,7 @@
   height: 2.5rem;
   left: 0;
   top: 50%;
-  background-image: url("../src/assets/Udemy.svg");
+  background-image: url("src/assets/Udemy.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -659,7 +659,7 @@
   height: 15px;
   left: 0;
   top: 0;
-  background-image: url("../src/assets/Circle.svg");
+  background-image: url("src/assets/Circle.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -700,7 +700,7 @@
   height: 2.5rem;
   left: 0;
   top: 50%;
-  background-image: url("../src/assets/Developer.svg");
+  background-image: url("src/assets/Developer.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -714,7 +714,7 @@
   height: 2.5rem;
   left: 0;
   top: 50%;
-  background-image: url("../src/assets/Designer.svg");
+  background-image: url("src/assets/Designer.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
