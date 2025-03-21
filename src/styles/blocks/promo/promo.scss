@@ -9,7 +9,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  background-image: url("src/assets/Background.jpg");
+  background-image: url("/src/assets/Background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -61,7 +61,7 @@
 
 @media (max-width: #{px-to-rem(640)}rem) {
   .promo {
-    background-image: url("src/assets/Backgroun%20(mobile).jpg");
+    background-image: url("/src/assets/Backgroun%20(mobile).jpg");
   }
   .promo__social-media {
     display: none;
