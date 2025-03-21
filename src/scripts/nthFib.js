@@ -2,7 +2,7 @@
 
 const phi = (1 + Math.sqrt(5)) / 2;
 
-function nthFibo(order) {
+function nthFibo1(order) {
   return order === 1
     ? 0
     : order === 2
@@ -12,13 +12,13 @@ function nthFibo(order) {
       );
 }
 
-console.log(nthFibo(2));
-console.log(nthFibo(4));
-console.log(nthFibo(1));
+console.log(nthFibo1(2));
+console.log(nthFibo1(4));
+console.log(nthFibo1(1));
 
 //Итеративный (медленнее, но целочисленный)
 
-function nthFibo(order) {
+function nthFibo2(order) {
   if (order === 1 || order === 2) return 1;
   let a = 1,
     b = 1,
@@ -31,6 +31,6 @@ function nthFibo(order) {
   return c;
 }
 
-console.log(nthFibo(2));
-console.log(nthFibo(4));
-console.log(nthFibo(1));
+console.log(nthFibo2(2));
+console.log(nthFibo2(4));
+console.log(nthFibo2(1));
