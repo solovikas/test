@@ -40,7 +40,7 @@
   height: 15px;
   left: 0;
   top: 0;
-  background-image: url("/src/assets/Circle.svg");
+  background-image: url("src/assets/Circle.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -79,7 +79,7 @@
   height: #{px-to-rem(40)}rem;
   left: 0;
   top: 50%;
-  background-image: url("/src/assets/Developer.svg");
+  background-image: url("src/assets/Developer.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -93,7 +93,7 @@
   height: #{px-to-rem(40)}rem;
   left: 0;
   top: 50%;
-  background-image: url("/src/assets/Designer.svg");
+  background-image: url("src/assets/Designer.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
