@@ -432,7 +432,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     -moz-column-gap: 7.0833333333%;
-         column-gap: 7.0833333333%;
+    column-gap: 7.0833333333%;
     align-content: center;
   }
 }
@@ -780,7 +780,7 @@
   padding-left: 2.34375%;
   padding-right: 2.34375%;
   -moz-column-gap: 3.3854166667%;
-       column-gap: 3.3854166667%;
+  column-gap: 3.3854166667%;
   width: 59.375%;
   height: -moz-fit-content;
   height: fit-content;
@@ -852,7 +852,7 @@
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: auto;
   -moz-column-gap: 1.5625rem;
-       column-gap: 1.5625rem;
+  column-gap: 1.5625rem;
 }
 
 .contact-info__input-element {
@@ -920,7 +920,9 @@
   position: relative;
 }
 
-.contact-info__input-email::-moz-placeholder, .contact-info__input-name::-moz-placeholder, .contact-info__input-message::-moz-placeholder {
+.contact-info__input-email::-moz-placeholder,
+.contact-info__input-name::-moz-placeholder,
+.contact-info__input-message::-moz-placeholder {
   color: rgba(0, 0, 0, 0.4);
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
@@ -942,7 +944,8 @@
   left: 1.25rem;
 }
 
-.contact-info__input-email::-moz-placeholder, .contact-info__input-name::-moz-placeholder {
+.contact-info__input-email::-moz-placeholder,
+.contact-info__input-name::-moz-placeholder {
   top: 50%;
   transform: translateY(-50%);
 }
@@ -1060,14 +1063,14 @@
     padding-left: 2.34375%;
     padding-right: 2.34375%;
     -moz-column-gap: 3.3854166667%;
-         column-gap: 3.3854166667%;
+    column-gap: 3.3854166667%;
     margin-bottom: 3.75rem;
   }
   .contact-info__input-row {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
     -moz-column-gap: 1.5625rem;
-         column-gap: 1.5625rem;
+    column-gap: 1.5625rem;
   }
   .contact-info__icons {
     gap: 1.5625rem;
@@ -1090,7 +1093,7 @@
   .contact-info__image {
     display: block;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     width: 100%;
     height: auto;
   }
@@ -1148,8 +1151,8 @@
 
 .agreement__checkbox-input {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border: 1px solid black;
   width: 0.75rem;
   height: 0.75rem;
@@ -1212,10 +1215,12 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   background-color: white;
   color: black;
   overflow-x: hidden;
+  width: 100%;
 }
 
 body.no-scroll {
